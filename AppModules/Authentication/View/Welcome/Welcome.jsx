@@ -1,3 +1,4 @@
+import { Button, ButtonText } from '@/components/ui/button';
 import { Nunito_400Regular, Nunito_700Bold } from '@expo-google-fonts/nunito';
 import { Raleway_700Bold, useFonts } from '@expo-google-fonts/raleway';
 import { useNavigation } from '@react-navigation/native';
@@ -29,6 +30,9 @@ const Welcome = () => {
             <View>
                 <Text style={[styles.titleText, { fontFamily: 'Raleway_700Bold' }]}></Text>
             </View>
+            <Button size="xl" variant="solid" action="primary">
+                <ButtonText>Hello World!</ButtonText>
+            </Button>
 
             <TouchableOpacity style={styles.buttonWrapper} onPress={() => navigation.navigate('Welcome Intro')}>
                 <Text style={[styles.buttonText, { fontFamily: 'Nunito_700Bold' }]}>Getting Started</Text>
